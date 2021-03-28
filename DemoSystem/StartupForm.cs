@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,9 @@ namespace DemoSystem
 {
     public partial class StartupForm : Form
     {
+
+        SqlConnection conn = new SqlConnection("");
+
         int loginPanelWidth;
         bool isLoginPanelVisible;
         bool isLoginBtnClicked;
