@@ -39,12 +39,12 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnLogin = new System.Windows.Forms.Button();
+            this.btnLoginPanel = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.loginPanel = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -149,28 +149,29 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Gainsboro;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.btnLogin);
+            this.panel2.Controls.Add(this.btnLoginPanel);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Location = new System.Drawing.Point(401, 172);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(736, 430);
             this.panel2.TabIndex = 8;
             // 
-            // btnLogin
+            // btnLoginPanel
             // 
-            this.btnLogin.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btnLogin.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(54)))));
-            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Font = new System.Drawing.Font("Inter Medium", 9.999999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.Location = new System.Drawing.Point(508, 321);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(183, 61);
-            this.btnLogin.TabIndex = 10;
-            this.btnLogin.Text = "<< Login ";
-            this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
-            this.btnLogin.MouseEnter += new System.EventHandler(this.login_MouseEnter);
-            this.btnLogin.MouseLeave += new System.EventHandler(this.login_MouseLeave);
+            this.btnLoginPanel.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnLoginPanel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(54)))));
+            this.btnLoginPanel.FlatAppearance.BorderSize = 2;
+            this.btnLoginPanel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLoginPanel.Font = new System.Drawing.Font("Inter Medium", 9.999999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoginPanel.Location = new System.Drawing.Point(497, 321);
+            this.btnLoginPanel.Name = "btnLoginPanel";
+            this.btnLoginPanel.Size = new System.Drawing.Size(183, 61);
+            this.btnLoginPanel.TabIndex = 10;
+            this.btnLoginPanel.Text = "<< Login ";
+            this.btnLoginPanel.UseVisualStyleBackColor = false;
+            this.btnLoginPanel.Click += new System.EventHandler(this.btnLogin_Click);
+            this.btnLoginPanel.MouseEnter += new System.EventHandler(this.login_MouseEnter);
+            this.btnLoginPanel.MouseLeave += new System.EventHandler(this.login_MouseLeave);
             // 
             // label7
             // 
@@ -187,9 +188,9 @@
             this.loginPanel.Controls.Add(this.label11);
             this.loginPanel.Controls.Add(this.panel3);
             this.loginPanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.loginPanel.Location = new System.Drawing.Point(1088, 0);
+            this.loginPanel.Location = new System.Drawing.Point(67, 0);
             this.loginPanel.Name = "loginPanel";
-            this.loginPanel.Size = new System.Drawing.Size(28, 695);
+            this.loginPanel.Size = new System.Drawing.Size(1049, 695);
             this.loginPanel.TabIndex = 1;
             // 
             // label11
@@ -208,7 +209,7 @@
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.panel3.Controls.Add(this.panel4);
-            this.panel3.Controls.Add(this.button1);
+            this.panel3.Controls.Add(this.btnLogin);
             this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.txtPassword);
             this.panel3.Controls.Add(this.label8);
@@ -218,18 +219,19 @@
             this.panel3.Size = new System.Drawing.Size(655, 342);
             this.panel3.TabIndex = 1;
             // 
-            // button1
+            // btnLogin
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(54)))));
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(66, 258);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(318, 50);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Login";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(54)))));
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnLogin.Location = new System.Drawing.Point(66, 258);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(318, 50);
+            this.btnLogin.TabIndex = 15;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.button1_Click);
             // 
             // label9
             // 
@@ -243,6 +245,8 @@
             // 
             // txtPassword
             // 
+            this.txtPassword.BackColor = System.Drawing.SystemColors.Info;
+            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPassword.Font = new System.Drawing.Font("Microsoft YaHei", 10F);
             this.txtPassword.Location = new System.Drawing.Point(66, 192);
             this.txtPassword.MaxLength = 50;
@@ -263,6 +267,8 @@
             // 
             // txtUserName
             // 
+            this.txtUserName.BackColor = System.Drawing.SystemColors.Info;
+            this.txtUserName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtUserName.Font = new System.Drawing.Font("Microsoft YaHei", 10F);
             this.txtUserName.Location = new System.Drawing.Point(67, 105);
             this.txtUserName.MaxLength = 50;
@@ -279,7 +285,7 @@
             this.panel4.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.panel4.Location = new System.Drawing.Point(432, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(206, 342);
+            this.panel4.Size = new System.Drawing.Size(284, 342);
             this.panel4.TabIndex = 4;
             // 
             // StartupForm
@@ -326,7 +332,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button btnLoginPanel;
         private System.Windows.Forms.Panel loginPanel;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.TextBox txtUserName;
@@ -335,7 +341,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Panel panel4;
     }
 }

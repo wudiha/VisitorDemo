@@ -14,7 +14,7 @@ namespace DemoSystem
     public partial class StartupForm : Form
     {
 
-        SqlConnection conn = new SqlConnection("");
+        SqlConnection conn = new SqlConnection(Helper.ConnString("demoConn"));
 
         int loginPanelWidth;
         bool isLoginPanelVisible;
@@ -63,23 +63,23 @@ namespace DemoSystem
 
         private void login_MouseHover(object sender, EventArgs e)
         {
-            btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(54)))));
+            btnLoginPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(54)))));
         }
 
         private void login_MouseLeave(object sender, EventArgs e)
         {
             if (!isLoginBtnClicked)
             {
-                btnLogin.BackColor = System.Drawing.SystemColors.ActiveBorder;
-                btnLogin.ForeColor = System.Drawing.SystemColors.ControlText;
+                btnLoginPanel.BackColor = System.Drawing.SystemColors.ActiveBorder;
+                btnLoginPanel.ForeColor = System.Drawing.SystemColors.ControlText;
                 loginPanel.BackColor = System.Drawing.SystemColors.ActiveBorder;
             }
         }
 
         private void login_MouseEnter(object sender, EventArgs e)
         {
-            btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(54)))));
-            btnLogin.ForeColor = Color.White;
+            btnLoginPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(54)))));
+            btnLoginPanel.ForeColor = Color.White;
             loginPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(54))))); 
         }
 
@@ -127,7 +127,20 @@ namespace DemoSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("Login");
+            SqlCommand cmd = new SqlCommand("sp_userLogin", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@username", txtUserName.Text);
+            cmd.Parameters.AddWithValue("@password", txtPassword.Text);
+
+            conn.Open();
+
+            int result = (int)cmd.ExecuteScalar();
+
+            if (result == 1) MessageBox.Show("Valid Credentials");
+            else MessageBox.Show("Invalid");
+
+
+            conn.Close(); 
         }
     }
 }
