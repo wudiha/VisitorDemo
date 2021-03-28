@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace DemoSystem
 {
-    public partial class Form1 : Form
+    public partial class StartupForm : Form
     {
         int loginPanelWidth;
         bool isLoginPanelVisible;
         bool isLoginBtnClicked;
-        public Form1()
+        public StartupForm()
         {
             InitializeComponent();
             loginPanelWidth = this.Width;
