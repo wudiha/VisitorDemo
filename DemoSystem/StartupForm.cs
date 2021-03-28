@@ -136,7 +136,12 @@ namespace DemoSystem
 
             int result = (int)cmd.ExecuteScalar();
 
-            if (result == 1) MessageBox.Show("Valid Credentials");
+            if (result == 1)
+            {
+                CustomMessageBox customMessageBox = new CustomMessageBox();
+                customMessageBox.Show();
+                this.Hide();
+            }
             else MessageBox.Show("Invalid");
 
 

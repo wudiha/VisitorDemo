@@ -136,7 +136,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Gainsboro;
             this.label6.Font = new System.Drawing.Font("Inter Light", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(31, 142);
+            this.label6.Location = new System.Drawing.Point(20, 142);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(660, 136);
             this.label6.TabIndex = 7;
@@ -188,9 +188,9 @@
             this.loginPanel.Controls.Add(this.label11);
             this.loginPanel.Controls.Add(this.panel3);
             this.loginPanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.loginPanel.Location = new System.Drawing.Point(1077, 0);
+            this.loginPanel.Location = new System.Drawing.Point(1079, 0);
             this.loginPanel.Name = "loginPanel";
-            this.loginPanel.Size = new System.Drawing.Size(39, 695);
+            this.loginPanel.Size = new System.Drawing.Size(37, 695);
             this.loginPanel.TabIndex = 1;
             // 
             // label11
@@ -305,6 +305,7 @@
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "StartupForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
