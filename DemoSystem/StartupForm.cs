@@ -83,7 +83,7 @@ namespace DemoSystem
             loginPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(54))))); 
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void btnLoginPanel_Click(object sender, EventArgs e)
         {
             timer1.Start();
             isLoginBtnClicked = true;
@@ -125,7 +125,7 @@ namespace DemoSystem
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
             SqlCommand cmd = new SqlCommand("sp_userLogin", conn);
             cmd.CommandType = CommandType.StoredProcedure;

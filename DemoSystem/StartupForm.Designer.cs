@@ -44,13 +44,13 @@
             this.loginPanel = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.btnLogin = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -169,7 +169,7 @@
             this.btnLoginPanel.TabIndex = 10;
             this.btnLoginPanel.Text = "<< Login ";
             this.btnLoginPanel.UseVisualStyleBackColor = false;
-            this.btnLoginPanel.Click += new System.EventHandler(this.btnLogin_Click);
+            this.btnLoginPanel.Click += new System.EventHandler(this.btnLoginPanel_Click);
             this.btnLoginPanel.MouseEnter += new System.EventHandler(this.login_MouseEnter);
             this.btnLoginPanel.MouseLeave += new System.EventHandler(this.login_MouseLeave);
             // 
@@ -188,9 +188,9 @@
             this.loginPanel.Controls.Add(this.label11);
             this.loginPanel.Controls.Add(this.panel3);
             this.loginPanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.loginPanel.Location = new System.Drawing.Point(67, 0);
+            this.loginPanel.Location = new System.Drawing.Point(1077, 0);
             this.loginPanel.Name = "loginPanel";
-            this.loginPanel.Size = new System.Drawing.Size(1049, 695);
+            this.loginPanel.Size = new System.Drawing.Size(39, 695);
             this.loginPanel.TabIndex = 1;
             // 
             // label11
@@ -219,6 +219,14 @@
             this.panel3.Size = new System.Drawing.Size(655, 342);
             this.panel3.TabIndex = 1;
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.panel4.Location = new System.Drawing.Point(432, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(284, 342);
+            this.panel4.TabIndex = 4;
+            // 
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(34)))), ((int)(((byte)(54)))));
@@ -231,7 +239,7 @@
             this.btnLogin.TabIndex = 15;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.button1_Click);
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // label9
             // 
@@ -279,14 +287,6 @@
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.panel4.Location = new System.Drawing.Point(432, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(284, 342);
-            this.panel4.TabIndex = 4;
             // 
             // StartupForm
             // 
